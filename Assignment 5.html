@@ -1,0 +1,77 @@
+
+<!-- saved from url=(0043)http://127.0.0.1:5500/vinay.html/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Assignment 5</title>
+        <link rel="stylesheet" href="./Assignment 5_files/style.css">
+    </head>
+    <body>
+        <nav align="center" gap:20px;="">
+                <a href="http://127.0.0.1:5500/vinay.html/index.html#">Home</a>
+                <a href="http://127.0.0.1:5500/vinay.html/index.html#">About</a>
+                <a href="http://127.0.0.1:5500/vinay.html/index.html#">Services</a>
+                <a href="http://127.0.0.1:5500/vinay.html/index.html#">Contact Us</a>
+        </nav>
+        <div class="img">
+            <img src="./Assignment 5_files/images" alt="Image 1">
+            <img src="./Assignment 5_files/black-sports-car-is-driving-down-road-with-autumn-leaves_1322455-28038.jpg" alt="Image 1">
+            <img src="./Assignment 5_files/d1de8ac46abd9e2c9787ef097f6aad5e.jpg" alt="Image 1">
+        </div>
+
+        <div class="form" align="center" method="post"><form>
+            <table>
+            <tbody><tr><td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name"><br><br></td></tr>
+
+            <tr><td><label for="date">Date:</label></td>
+            <td><input type="date" id="date" name="date"><br><br></td></tr>
+
+            <tr><td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"><br><br></td></tr>
+
+            <tr><td><label for="Contact">Contact:</label></td>
+            <td><textarea id="Contact" name="Contact" rows="4" cols="50"></textarea><br><br></td></tr>
+
+            </tbody></table>
+
+            <input type="submit" value="Submit">
+        </form></div>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
